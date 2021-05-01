@@ -14,7 +14,7 @@
         <br><br><br>
         <div>
             <h1 v-if="showItem">show this item if "showItem" is true</h1>
-            <h1 v-if="!showItem">show .. this item if "showItem" is false</h1>
+            <h1 v-else>show .. this item if "showItem" is false</h1>
         </div>
 
         <button @click="changeShowItem">Change showItem</button>

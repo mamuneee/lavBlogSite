@@ -9,7 +9,12 @@ require('./bootstrap');
 window.Vue = require('vue').default;
 import router from './router'
 import VueRouter from 'vue-router'
-Vue.use(VueRouter)
+
+import ViewUI from 'view-design';
+import 'view-design/dist/styles/iview.css';
+
+Vue.use(VueRouter);
+Vue.use(ViewUI);
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
